@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRCP Premium HR Certification Prep - Pass PHR, SPHR, SHRM | Free Trial Available</title>
+    <meta name="description" content="Ace your HR certification with HRCP's proven study guides, practice tests & flashcards for PHR, SPHR, SHRM-CP. Money-back guarantee, 80-90% pass rates. Start free today!">
+    <link rel="alternate" hreflang="en" href="#">
+    <link rel="alternate" hreflang="es" href="#">
+    <link rel="alternate" hreflang="fr" href="#">
+    <link rel="alternate" hreflang="de" href="#">
+    <link rel="alternate" hreflang="zh" href="#">
+    <link rel="alternate" hreflang="ja" href="#">
+    <link rel="alternate" hreflang="ru" href="#">
+    <link rel="alternate" hreflang="ar" href="#">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --urgency-red: #ff4757;
+            --text-dark: #2d3436;
+            --text-light: #636e72;
+            --bg-light: #f8f9fa;
+            --white: #fff;
+            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: var(--text-dark); overflow-x: hidden; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        /* Sticky Nav */
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 1000; box-shadow: var(--shadow); }
+        nav .container { display: flex; justify-content: space-between; align-items: center; padding: 1rem 20px; }
+        .logo { font-size: 1.5rem; font-weight: 700; background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-toggle { display: none; font-size: 1.5rem; cursor: pointer; }
+        .nav-menu { display: flex; list-style: none; gap: 2rem; }
+        .nav-menu a { text-decoration: none; color: var(--text-dark); font-weight: 500; transition: color 0.3s; }
+        .nav-menu a:hover { color: #764ba2; }
+        .lang-switcher { display: flex; gap: 0.5rem; }
+        .lang-btn { background: none; border: none; padding: 0.5rem; cursor: pointer; font-size: 0.9rem; transition: background 0.3s; border-radius: 4px; }
+        .lang-btn.active { background: var(--primary-gradient); color: white; }
+        /* Urgency Bar */
+        .urgency-bar { background: var(--urgency-red); color: white; text-align: center; padding: 0.75rem 0; font-weight: 600; position: relative; z-index: 999; }
+        /* Hero */
+        .hero { background: var(--primary-gradient); color: white; padding: 120px 0 80px; text-align: center; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23fff" opacity="0.1"><polygon points="0,100 1000,0 1000,100"/></svg>') no-repeat bottom; background-size: cover; }
+        .hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; margin-bottom: 1rem; }
+        .hero p { font-size: 1.25rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .cta-btn { display: inline-block; background: var(--secondary-gradient); color: white; padding: 1rem 2.5rem; font-size: 1.1rem; font-weight: 600; border-radius: 50px; text-decoration: none; transition: all 0.3s; box-shadow: var(--shadow); animation: bounce 2s infinite; }
+        .cta-btn:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+        @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-10px); } 60% { transform: translateY(-5px); } }
+        /* Sections */
+        section { padding: 80px 0; }
+        h2 { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        /* Features Grid */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .feature-card { text-align: center; padding: 2rem; background: white; border-radius: 20px; box-shadow: var(--shadow); transition: all 0.3s; }
+        .feature-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+        .feature-icon { font-size: 4rem; background: var(--primary-gradient); color: white; width: 100px; height: 100px; margin: 0 auto 1rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+        /* Stats */
+        .stats { background: var(--bg-light); }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; }
+        .stat { font-size: 3rem; font-weight: 700; color: var(--urgency-red); margin-bottom: 0.5rem; }
+        /* Testimonials Carousel */
+        .testimonial-carousel { position: relative; overflow: hidden; max-width: 800px; margin: 0 auto; }
+        .testimonial { display: none; padding: 2rem; background: white; border-radius: 20px; box-shadow: var(--shadow); text-align: center; }
+        .testimonial.active { display: block; animation: slideIn 0.5s; }
+        @keyframes slideIn { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: translateX(0); } }
+        .carousel-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 1rem; cursor: pointer; font-size: 1.2rem; }
+        .carousel-nav.prev { left: 10px; }
+        .carousel-nav.next { right: 10px; }
+        .author { font-weight: 600; margin-top: 1rem; }
+        /* Pricing */
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .price-card { background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow); text-align: center; transition: all 0.3s; position: relative; }
+        .price-card.featured { border: 3px solid var(--primary-gradient); transform: scale(1.05); }
+        .price-card:hover { transform: translateY(-10px); }
+        .price-amount { font-size: 3rem; font-weight: 700; color: var(--urgency-red); }
+        .price-label { font-size: 1.2rem; color: var(--text-light); }
+        /* FAQ */
+        .faq-item { border-bottom: 1px solid #eee; margin-bottom: 1rem; }
+        .faq-question { background: none; border: none; width: 100%; text-align: left; padding: 1.5rem; font-size: 1.1rem; font-weight: 500; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: all 0.3s; padding: 0 1.5rem; }
+        .faq-answer.active { max-height: 200px; padding: 1.5rem; background: var(--bg-light); }
+        /* Affiliate Disclosure */
+        .disclosure { background: var(--bg-light); padding: 2rem; border-radius: 10px; margin: 2rem 0; font-size: 0.9rem; color: var(--text-light); }
+        /* Trust Footer */
+        footer { background: var(--text-dark); color: white; text-align: center; padding: 3rem 0 1rem; }
+        .badges { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin: 1rem 0; }
+        .badge { padding: 0.5rem 1rem; background: #28a745; color: white; border-radius: 20px; font-size: 0.8rem; }
+        /* Mobile */
+        @media (max-width: 768px) {
+            .nav-toggle { display: block; }
+            .nav-menu { position: fixed; top: 70px; left: -100%; width: 100%; height: calc(100vh - 70px); background: white; flex-direction: column; justify-content: start; align-items: center; padding: 2rem 0; transition: left 0.3s; box-shadow: var(--shadow); }
+            .nav-menu.active { left: 0; }
+            .hero { padding: 100px 0 60px; }
+        }
+        /* Smooth Scroll */
+        html { scroll-behavior: smooth; }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "What is HRCP?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "HRCP provides study guides, practice tests, and flashcards for HR certifications like PHR, SPHR, SHRM."
+            }
+        },{
+            "@type": "Question",
+            "name": "Is there a money-back guarantee?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, money-back if you don't pass."
+            }
+        },{
+            "@type": "Question",
+            "name": "What are the pass rates?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Consistently 80-90% pass rates."
+            }
+        }]
+    }
+    </script>
+</head>
+<body>
+    <!-- Urgency Bar -->
+    <div class="urgency-bar">
+        <div class="container">⚡ Limited Time: Start Your Free Trial Now & Get Certified Faster! 🚀</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">HRCP Prep</div>
+            <i class="fas fa-bars nav-toggle" onclick="toggleMenu()"></i>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="lang-switcher" id="langSwitcher"></div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Pass Your HR Certification on the First Try</h1>
+            <p>Proven study guides, practice exams & flashcards for PHR, SPHR, SHRM-CP/SCP. 80-90% pass rates with money-back guarantee.</p>
+            <a href="https://www.linkconnector.com/ta.php?lc=007949120619007379&atid=HrcpebWebWeb" class="cta-btn" target="_blank" rel="nofollow noopener">Start Free Trial Now</a>
+            <p style="margin-top: 1rem; font-size: 1rem; opacity: 0.9;"><strong>[KEY PROOF]</strong> Trusted by thousands – Real testimonials below! <strong>[COMMISSION %]</strong> Earn generous commissions as affiliate.</p>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="container">
+            <h2>Why Choose HRCP?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-book"></i></div>
+                    <h3>Comprehensive Study Guides</h3>
+                    <p>Full coverage of all exam topics for PHR, SPHR, aPHR, SHRM & more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Realistic Practice Tests</h3>
+                    <p>Hundreds of practice questions mimicking the real exam.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-cards"></i></div>
+                    <h3>Flashcards & Quick Review</h3>
+                    <p>Portable flashcards for on-the-go study.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Money-Back Guarantee</h3>
+                    <p>Pass or your money back – we're that confident.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>80-90% Pass Rates</h3>
+                    <p>Proven results from group training programs.</p> [web:4][page:0]
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Flexible Learning</h3>
+                    <p>Study anytime, anywhere on any device.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Stats -->
+    <section id="results" class="stats">
+        <div class="container">
+            <h2>Proven Results</h2>
+            <div class="stats-grid">
+                <div>
+                    <div class="stat">80-90%</div>
+                    <div>Pass Rate</div>
+                </div>
+                <div>
+                    <div class="stat">1000+</div>
+                    <div>Testimonials</div>
+                </div>
+                <div>
+                    <div class="stat">9</div>
+                    <div>Certifications</div>
+                </div>
+                <div>
+                    <div class="stat">100%</div>
+                    <div>Guarantee</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial active">
+                    <p>"Thank you for the excellent study material. Passed PHR and SPHR on first try!"</p>
+                    <div class="author">— Michelle B.</div>
+                </div>
+                <div class="testimonial">
+                    <p>"Passed the SPHR exam this morning. Thank you so much!"</p>
+                    <div class="author">— Brigette R.</div>
+                </div>
+                <div class="testimonial">
+                    <p>"With your course I was able to pass! Highly recommend."</p>
+                    <div class="author">— Walter D.</div>
+                </div>
+            </div>
+            <button class="carousel-nav prev" onclick="prevTestimonial()">❮</button>
+            <button class="carousel-nav next" onclick="nextTestimonial()">❯</button>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="container">
+            <h2>Simple Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Free</h3>
+                    <div class="price-amount">$0</div>
+                    <div class="price-label">Forever</div>
+                    <ul style="list-style: none; padding: 1rem 0;">
+                        <li><i class="fas fa-check" style="color: green;"></i> Basic Access</li>
+                        <li><i class="fas fa-check" style="color: green;"></i> 1 Practice Test</li>
+                        <li><i class="fas fa-times" style="color: red;"></i> No Guarantee</li>
+                    </ul>
+                    <a href="https://www.linkconnector.com/ta.php?lc=007949120619007379&atid=HrcpebWebWeb" class="cta-btn" style="margin-top: 1rem; padding: 0.8rem 1.5rem; font-size: 1rem;" target="_blank" rel="nofollow noopener">Get Started Free</a>
+                </div>
+                <div class="price-card featured">
+                    <h3>Pro</h3>
+                    <div class="price-amount">$15</div>
+                    <div class="price-label">One-Time</div>
+                    <ul style="list-style: none; padding: 1rem 0;">
+                        <li><i class="fas fa-check" style="color: green;"></i> Full Study Guides</li>
+                        <li><i class="fas fa-check" style="color: green;"></i> Unlimited Tests</li>
+                        <li><i class="fas fa-check" style="color: green;"></i> Money-Back Guarantee</li>
+                    </ul>
+                    <a href="https://www.linkconnector.com/ta.php?lc=007949120619007379&atid=HrcpebWebWeb" class="cta-btn" style="margin-top: 1rem;" target="_blank" rel="nofollow noopener">Choose Pro</a>
+                </div>
+                <div class="price-card">
+                    <h3>Custom</h3>
+                    <div class="price-amount">Custom</div>
+                    <div class="price-label">Enterprise</div>
+                    <ul style="list-style: none; padding: 1rem 0;">
+                        <li><i class="fas fa-check" style="color: green;"></i> Group Training</li>
+                        <li><i class="fas fa-check" style="color: green;"></i> Custom Content</li>
+                        <li><i class="fas fa-check" style="color: green;"></i> Dedicated Support</li>
+                    </ul>
+                    <a href="https://www.linkconnector.com/ta.php?lc=007949120619007379&atid=HrcpebWebWeb" class="cta-btn" style="margin-top: 1rem; padding: 0.8rem 1.5rem; font-size: 1rem;" target="_blank" rel="nofollow noopener">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)"><span>What is HRCP?</span><i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">HRCP offers comprehensive prep materials for HR certifications including study guides, practice tests, and flashcards for PHR, SPHR, SHRM, and more. [page:0]</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)"><span>Is there a guarantee?</span><i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">Yes, money-back guarantee if you don't pass. [page:0]</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)"><span>What are the pass rates?</span><i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">Groups using our materials report 80-90% pass rates. [page:0]</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Affiliate Disclosure -->
+    <section>
+        <div class="container">
+            <div class="disclosure">
+                <strong>Affiliate Disclosure:</strong> This site is an affiliate for HRCP via LinkConnector. We earn commissions from qualifying purchases at no extra cost to you. [web:1]
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3>Trusted By HR Pros Worldwide</h3>
+            <div class="badges">
+                <span class="badge"><i class="fas fa-shield-alt"></i> Money-Back Guarantee</span>
+                <span class="badge"><i class="fas fa-chart-line"></i> 80-90% Pass Rate</span>
+                <span class="badge">HRCI Aligned</span>
+                <span class="badge">SHRM Approved</span>
+            </div>
+            <p>&copy; 2026 HRCP Affiliate Landing. All rights reserved. | <a href="#privacy" style="color: #ccc;">Privacy</a> | <a href="#terms" style="color: #ccc;">Terms</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Nav
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('active');
+        }
+
+        // Language Switcher (Auto-detect placeholder)
+        const langs = ['EN', 'ES', 'FR', 'DE', 'ZH', 'JA', 'RU', 'AR'];
+        const langSwitcher = document.getElementById('langSwitcher');
+        langs.forEach(lang => {
+            const btn = document.createElement('button');
+            btn.className = 'lang-btn';
+            btn.textContent = lang;
+            btn.onclick = () => {
+                document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                // Translate logic here (placeholder)
+                alert(`Switched to ${lang}`);
+            };
+            langSwitcher.appendChild(btn);
+        });
+        // Auto-detect (simple)
+        document.querySelector('.lang-btn').classList.add('active'); // Default EN
+
+        // Testimonials Carousel
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial');
+        function showTestimonial(index) {
+            testimonials.forEach((t, i) => t.classList.toggle('active', i === index));
+        }
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+        function prevTestimonial() {
+            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+        setInterval(nextTestimonial, 5000); // Auto-advance
+
+        // FAQ
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            answer.classList.toggle('active');
+            const icon = button.querySelector('i');
+            icon.style.transform = answer.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+            icon.style.transition = 'transform 0.3s';
+        }
+
+        // Smooth hovers already in CSS
+    </script>
+</body>
+</html>
