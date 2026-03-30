@@ -527,3 +527,366 @@
     }
 
     /* Icon "fake
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      .hero__title {
+        font-size: 1.8rem;
+      }
+
+      .hero__subtitle {
+        font-size: 1rem;
+      }
+
+      .section {
+        padding: 3rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky nav -->
+  <nav class="sticky-nav">
+    <div class="sticky-nav__logo">HRCP Prep</div>
+    <div class="nav-actions">
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <select class="lang-switcher" id="langSwitcher" aria-label="Language">
+        <option value="en" selected>English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="zh">中文</option>
+        <option value="ja">日本語</option>
+        <option value="ru">Русский</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+  </nav>
+
+  <!-- Red urgency bar -->
+  <div class="urgency-bar">
+    Limited spots available — enroll today and lock in 25% recurring affiliate commissions!
+  </div>
+
+  <!-- Hero section -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <h1 class="hero__title">HRCP Exam Prep with Highest Pass Rates</h1>
+      <p class="hero__subtitle">
+        Master PHR, SPHR, SHRM‑CP, and SHRM‑SCP with proven online prep courses, practice tests, and 24/7 support — backed by thousands of certified HR professionals.
+      </p>
+      <a
+        class="hero__cta"
+        href="https://www.linkconnector.com/ta.php?lc=007949120619007379&atid=HrcpebWebWeb"
+        rel="nofollow"
+        target="_blank"
+      >
+        Join HRCP Today
+      </a>
+    </div>
+  </section>
+
+  <!-- 6‑card features -->
+  <section class="section">
+    <h2 class="section__title">What You Get</h2>
+    <p class="section__subtitle">Everything you need to pass your HR certification on the first try.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-card__icon">⏱️</div>
+        <h3 class="feature-card__title">Timed Practice Tests</h3>
+        <p class="feature-card__text">Simulate real exam conditions with timed, adaptive tests.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">📝</div>
+        <h3 class="feature-card__title">Detailed Explanations</h3>
+        <p class="feature-card__text">See why each answer is correct or incorrect.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">📈</div>
+        <h3 class="feature-card__title">Progress Tracking</h3>
+        <p class="feature-card__text">Watch your weak areas turn into strengths.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">📺</div>
+        <h3 class="feature-card__title">On‑Demand Video Courses</h3>
+        <p class="feature-card__text">Learn at your own pace from expert instructors.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">💬</div>
+        <h3 class="feature-card__title">Community & Support</h3>
+        <p class="feature-card__text">Get help from peers and live Q&A sessions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">💰</div>
+        <h3 class="feature-card__title">Affiliate Program</h3>
+        <p class="feature-card__text">Earn 25% recurring commissions per sale via LinkConnector.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4‑stat results -->
+  <section class="section section--light">
+    <h2 class="section__title">Proven Results</h2>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-card__value">92%</div>
+        <div class="stat-card__label">Pass Rate</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__value">15k+</div>
+        <div class="stat-card__label">Certified Graduates</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__value">$3.2M</div>
+        <div class="stat-card__label">Sales Proof</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__value">25%</div>
+        <div class="stat-card__label">Affiliate Commission</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial carousel -->
+  <section class="section">
+    <h2 class="section__title">What Students Say</h2>
+
+    <div class="carousel">
+      <div class="carousel__inner">
+        <div class="testimonial-card">
+          <p class="testimonial-card__body">
+            “HRCP helped me pass my SHRM‑CP on the first try. The practice tests were spot‑on and the explanations made everything click.”
+          </p>
+          <p class="testimonial-card__author">Sarah T.</p>
+          <p class="testimonial-card__occupation">HR Manager, Chicago</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-card__body">
+            “As a busy HR director, the flexible video format saved me so much time. I went from overwhelmed to confident in just 6 weeks.”
+          </p>
+          <p class="testimonial-card__author">Mark R.</p>
+          <p class="testimonial-card__occupation">Director of HR, Atlanta</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-card__body">
+            “The community and support alone were worth the price. I answered real exam‑style questions with experts before my test day.”
+          </p>
+          <p class="testimonial-card__author">Lisa K.</p>
+          <p class="testimonial-card__occupation">HR Specialist, Toronto</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing cards -->
+  <section class="section section--light" id="pricing">
+    <h2 class="section__title">Simple Pricing, Big Rewards</h2>
+    <p class="section__subtitle">
+      Start preparing today or join as an affiliate and earn passive income from every sale.
+    </p>
+
+    <div class="pricing-grid">
+      <!-- Free tier -->
+      <div class="pricing-card">
+        <div class="pricing-card__name">Free Tier</div>
+        <div class="pricing-card__price">$0</div>
+        <div class="pricing-card__currency">per month</div>
+        <div class="pricing-card__freq">Free forever, no credit card</div>
+
+        <div class="pricing-card__features">
+          <div class="pricing-card__feature">– 5 practice questions/day</div>
+          <div class="pricing-card__feature">– Basic topic overview</div>
+          <div class="pricing-card__feature">– Limited community access</div>
+          <div class="pricing-card__feature">– Not eligible for affiliation</div>
+        </div>
+
+        <a
+          class="pricing-card__cta"
+          href="https://www.linkconnector.com/ta.php?lc=007949120619007379&atid=HrcpebWebWeb"
+          rel="nofollow"
+          target="_blank"
+        >
+          Start Free
+        </a>
+      </div>
+
+      <!-- Pro tier -->
+      <div class="pricing-card pricing-card--highlight">
+        <div class="pricing-card__name">Pro Subscription</div>
+        <div class="pricing-card__price">$15</div>
+        <div class="pricing-card__currency">per month</div>
+        <div class="pricing-card__freq">Billed monthly</div>
+
+        <div class="pricing-card__features">
+          <div class="pricing-card__feature">– Unlimited practice tests</div>
+          <div class="pricing-card__feature">– Full video library access</div>
+          <div class="pricing-card__feature">– Personal progress dashboard</div>
+          <div class="pricing-card__feature">– Email support & updates</div>
+        </div>
+
+        <a
+          class="pricing-card__cta"
+          href="https://www.linkconnector.com/ta.php?lc=007949120619007379&atid=HrcpebWebWeb"
+          rel="nofollow"
+          target="_blank"
+        >
+          Get Pro Access
+        </a>
+      </div>
+
+      <!-- Custom / Enterprise -->
+      <div class="pricing-card">
+        <div class="pricing-card__name">Custom / Enterprise</div>
+        <div class="pricing-card__price">Custom</div>
+        <div class="pricing-card__currency">per organization</div>
+        <div class="pricing-card__freq">Tailored pricing</div>
+
+        <div class="pricing-card__features">
+          <div class="pricing-card__feature">– Team & department licensing</div>
+          <div class="pricing-card__feature">– Custom onboarding & training</div>
+          <div class="pricing-card__feature">– Dedicated account manager</div>
+          <div class="pricing-card__feature">– Special affiliate arrangements</div>
+        </div>
+
+        <a
+          class="pricing-card__cta"
+          href="https://www.linkconnector.com/ta.php?lc=007949120619007379&atid=HrcpebWebWeb"
+          rel="nofollow"
+          target="_blank"
+        >
+          Get Custom Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- affiliate disclosure -->
+  <section class="section">
+    <div class="affiliate-disclosure">
+      <strong>Disclosure:</strong> We participate in affiliate programs, including LinkConnector, and earn commissions when you enroll via our links. This page promotes HRCP exam‑prep products and affiliate opportunities. [KEY PROOF]: Over $3.2M in sales to date, 92% student pass rate, 15K+ certified HR professionals. [COMMISSION %]: 25% recurring commissions per sale for affiliates via LinkConnector.
+    </div>
+  </section>
+
+  <!-- FAQ accordion -->
+  <section class="section" id="faq">
+    <h2 class="section__title">Frequently Asked Questions</h2>
+
+    <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="faq-item__header" tabindex="0" role="button" aria-expanded="false" id="faq-1-header">
+          <span itemprop="name">How long does HRCP Pro last?</span>
+          <span class="faq-accordion__chevron" aria-hidden="true">▼</span>
+        </div>
+        <div class="faq-item__body" aria-labelledby="faq-1-header" role="region" hidden>
+          <div class="faq-item__body-content" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p>HRCP Pro gives you 12 months of access to all practice tests and videos. You can renew at any time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="faq-item__header" tabindex="0" role="button" aria-expanded="false" id="faq-2-header">
+          <span itemprop="name">Can I become an affiliate?</span>
+          <span class="faq-accordion__chevron" aria-hidden="true">▼</span>
+        </div>
+        <div class="faq-item__body" aria-labelledby="faq-2-header" role="region" hidden>
+          <div class="faq-item__body-content" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p>Yes. You can join the HRCP affiliate program via LinkConnector and earn 25% recurring commissions on every sale you refer.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="faq-item__header" tabindex="0" role="button" aria-expanded="false" id="faq-3-header">
+          <span itemprop="name">Is there a money‑back guarantee?</span>
+          <span class="faq-accordion__chevron" aria-hidden="true">▼</span>
+        </div>
+        <div class="faq-item__body" aria-labelledby="faq-3-header" role="region" hidden>
+          <div class="faq-item__body-content" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p>We offer a 30‑day satisfaction guarantee. If you’re not happy with your experience, you can request a refund within the first month.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="faq-item__header" tabindex="0" role="button" aria-expanded="false" id="faq-4-header">
+          <span itemprop="name">Which certifications does HRCP cover?</span>
+          <span class="faq-accordion__chevron" aria-hidden="true">▼</span>
+        </div>
+        <div class="faq-item__body" aria-labelledby="faq-4-header" role="region" hidden>
+          <div class="faq-item__body-content" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p>HRCP supports PHR, SPHR, SHRM‑CP, and SHRM‑SCP exams with course‑specific practice tests and study guides.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky footer CTA -->
+  <div class="footer-cta">
+    <a
+      class="footer-cta__btn"
+      href="https://www.linkconnector.com/ta.php?lc=007949120619007379&atid=HrcpebWebWeb"
+      rel="nofollow"
+      target="_blank"
+    >
+      Join HRCP & Start Earning 25% Commissions
+    </a>
+  </div>
+
+  <!-- Trust footer -->
+  <footer class="trust-footer">
+    <div class="badges">
+      <!-- You can replace these with real SVGs or images -->
+      <div class="badge">SSL Secure</div>
+      <div class="badge">GDPR</div>
+      <div class="badge">PCI Compliant</div>
+      <div class="badge">LinkConnector</div>
+      <div class="badge">HRCP Certified</div>
+      <div class="badge">Affiliate Program</div>
+    </div>
+
+    <div class="footer-links">
+      <a href="#top">Home</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">LinkConnector Affiliate Portal</a>
+    </div>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#777;">
+      HRCP is a training partner for HR certification exams. HRCP and its affiliate programs are independent of HRCI and SHRM. Earn 25% recurring commissions per sale via LinkConnector. [KEY PROOF]: Over $3.2M in sales, 92% pass rate, 15K+ certified HR professionals.
+    </p>
+  </footer>
+
+  <!-- Language switcher JS -->
+  <script>
+    const langSwitcher = document.getElementById("langSwitcher");
+    langSwitcher.addEventListener("change", function () {
+      const lang = this.value;
+      // In a real app you’d redirect or swap content here; for now just show alert.
+      alert("Language changed to: " + lang.toUpperCase() + ".\n(You can replace this with page‑level redirects or content‑based translation scripts.)");
+    });
+
+    // FAQ accordion
+    document.querySelectorAll(".faq-item__header").forEach((header) => {
+      header.addEventListener("click", function () {
+        const item = this.closest(".faq-item");
+        const body = this.nextElementSibling;
+        const isOpen = item.classList.contains("faq-item--open");
+
+        if (isOpen) {
+          item.classList.remove("faq-item--open");
+          body.setAttribute("hidden", "");
+        } else {
+          item.classList.add("faq-item--open");
+          body.removeAttribute("hidden");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
